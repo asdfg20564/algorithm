@@ -109,7 +109,7 @@ int main(void)
 	return 0;
 }*/
 
-/* 그래프 선언 입력
+/* 그래프 선언 입력 */
 int main(void)
 {
 	int n, m;
@@ -130,10 +130,12 @@ int main(void)
 		//graph[v].push_back(u);    //이 경우는 양방향일 때
 	}
 
-	// node 1에 연결된 모든 node 출력
-	for (auto iter = graph[1].begin(); iter != graph[1].end(); iter++)
-		cout << *iter << endl;
+	 for(int i = 1; i < 6; i++){
+    	cout << i << " - ";
+    	for (auto iter = graph[i].begin(); iter != graph[i].end(); iter++)
+			cout << *iter << " ";	//ex node 1의 결과 3 5
+		cout << endl;
+    }
 
 	return 0;
 }
-*/
