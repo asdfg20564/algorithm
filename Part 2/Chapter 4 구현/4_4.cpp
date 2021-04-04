@@ -70,5 +70,12 @@ int main(void)
 
 	cout << res;
 
+	for (int i = 0; i < n; i++){
+		delete[] visited[i];
+		delete[] arr[i];
+	}
+	delete[] visited;
+	delete[] arr;
+
 	return 0;
 }
